@@ -1,6 +1,6 @@
 {
   "name": "sensors-web-app",
-  "homepage": "http://Localhost/projects/mnr/Sensor-web-master/Sensor-web-master/build",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
