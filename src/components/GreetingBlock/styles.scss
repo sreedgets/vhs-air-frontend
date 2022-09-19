@@ -1,0 +1,21 @@
+@import "../../scss/vars.scss";
+
+.greetingBlock {
+  &__subtitle {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: $blackText;
+  }
+  &__title {
+    font-family: $poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -1px;
+    color: $blackText;
+  }
+}

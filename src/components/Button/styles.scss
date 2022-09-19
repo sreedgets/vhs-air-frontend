@@ -1,0 +1,21 @@
+@import "../../scss/vars.scss";
+
+.button {
+  width: 166px;
+  height: 56px;
+  border-radius: 15px;
+  background-color: $backgroundRed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &__text {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+}

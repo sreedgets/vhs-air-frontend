@@ -1,0 +1,50 @@
+@import "../../scss/vars.scss";
+
+.addAdminForm {
+  margin-left: 12px;
+  width: 65%;
+  &__input__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $disableText;
+    padding-bottom: 16px;
+  }
+  &__input {
+    padding: 17px 0 17px 23px;
+    background-color: $backgroundLiteGrey;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid $backgroundLiteGrey;
+    transition: all 0.3s linear;
+    &:focus {
+      border: 2px solid $primary;
+      background-color: $white;
+    }
+  }
+  &__button {
+    width: 50%;
+    background-color: $backgroundRed;
+    color: $whiteText;
+    border: none;
+    border-radius: 10px;
+    padding: 18px 0;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  &__error {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $red;
+    padding-bottom: 16px;
+  }
+}

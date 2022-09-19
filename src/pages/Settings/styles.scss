@@ -1,0 +1,52 @@
+@import "../../scss/vars.scss";
+
+.settings {
+  display: flex;
+  &__asideMenu {
+    min-width: 256px;
+    position: fixed;
+  }
+  &__content {
+    flex: 1;
+    overflow: hidden;
+    padding-left: 65px;
+    padding-right: 90px;
+    padding-top: 48px;
+    margin-left: 265px;
+    min-height: 100vh;
+  }
+  &__table {
+    max-width: 517px;
+    background-color: $backgroundWhiteWithOutOpacity;
+    margin-top: 48px;
+    min-height: 70vh;
+    border-radius: 30px;
+    box-shadow: 0px 23px 50px 5px rgba(0, 0, 0, 0.2);
+    padding-left: 32px;
+    padding-top: 32px;
+    &__menu {
+      display: flex;
+    }
+    &__button {
+      background-color: $backgroundWhiteWithOutOpacity;
+      border: 1px solid $red;
+      cursor: pointer;
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-family: $inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #11142d;
+      margin-left: 13px;
+      margin-bottom: 32px;
+      &.active {
+        background-color: $backgroundBlue;
+        border: 1px solid $primary;
+        color: #ffffff;
+      }
+    }
+  }
+}

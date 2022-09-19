@@ -1,0 +1,32 @@
+@import "../../scss/vars.scss";
+
+.admins {
+  padding-left: 13px;
+  padding-right: 45px;
+  &__title {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $disableText;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 16px;
+  }
+  &__paginationWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    &__btn {
+      background-color: $red;
+      color: white;
+      padding: 8px 20px;
+      margin: 0 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      &.disable {
+        background-color: $disable;
+      }
+    }
+  }
+}

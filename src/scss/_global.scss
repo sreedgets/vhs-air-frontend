@@ -1,0 +1,40 @@
+@import "../scss/vars.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+body {
+  font-family: $inter;
+  font-weight: 600;
+  color: $disableText;
+  background-color: $backgroundWhite;
+}
+
+.container {
+  display: flex;
+}

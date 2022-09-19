@@ -1,0 +1,40 @@
+%button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+%input {
+  outline: none;
+  border: none;
+}
+
+%center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%shadow {
+  box-shadow: 0px 2px 14px rgba(14, 14, 15, 0.04);
+}
+%shadowHover {
+  box-shadow: 0px 2px 14px rgba(14, 14, 15, 0.18);
+}
+
+%alignCenter {
+  display: flex;
+  align-items: center;
+}
+
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

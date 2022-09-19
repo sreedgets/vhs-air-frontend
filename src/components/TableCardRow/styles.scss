@@ -1,0 +1,81 @@
+@import "../../scss/vars.scss";
+
+.tableRow {
+  &__thead,
+  &__tbody {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+  }
+  &__tbody {
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .arrowJustify {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .arrowIcon {
+      transform: rotateX(180deg);
+      border: 10px solid transparent;
+      cursor: pointer;
+
+      &__open {
+        transform: rotateX(0);
+      }
+    }
+  }
+  &__input {
+    width: 44px;
+    height: 44px;
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    background: #f2f3f5;
+    text-align: center;
+    transition: all 0.3s linear;
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $disableText;
+    &:disabled {
+      border: 0;
+      background-color: transparent;
+    }
+    &::placeholder {
+      font-family: $inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: $disableText;
+    }
+  }
+  &__column {
+    display: flex;
+    width: 20%;
+  }
+  &__text {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $disableText;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

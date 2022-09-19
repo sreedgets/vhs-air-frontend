@@ -1,0 +1,30 @@
+@import "../../scss/vars.scss";
+
+.adminCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 24px 0;
+  &__email {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808191;
+  }
+  &__button {
+    background-color: $backgroundRed;
+    font-family: $inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
