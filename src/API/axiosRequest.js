@@ -36,6 +36,7 @@ export const axiosRequest = async (
       } else if (error.response.status === 500) {
         alert("Sorry the server is not available right now please try later");
         console.log(error.message);
+        console.log(error.response.data);
       }
     }
   }
