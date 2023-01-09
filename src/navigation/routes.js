@@ -2,7 +2,7 @@ import { Dashboard, Settings, SignIn } from "../pages";
 
 export const routesPublic = [
   {
-    path: "/singIn",
+    path: "/signIn",
     exact: true,
     component: SignIn,
   },

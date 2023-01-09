@@ -93,7 +93,7 @@ const MainNavigation = () => {
             ))}
 
         <Route exact path="*">
-          <Redirect to={token ? "/dashboard" : "/singIn"} />
+          <Redirect to={token ? "/dashboard" : "/signIn"} />
         </Route>
       </Switch>
     </GetDataContext.Provider>
