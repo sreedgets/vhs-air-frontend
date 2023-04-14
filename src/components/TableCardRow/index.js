@@ -55,8 +55,6 @@ const TableCardRow = ({
         case 19:
           setPm7(timeslotItem);
           break;
-        default:
-            console.log("Error finding time.")
       }
     }
   }, [aqi, humidity, temperature]);
