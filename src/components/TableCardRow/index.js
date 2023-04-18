@@ -43,6 +43,24 @@ const TableCardRow = ({
   useEffect(() => {
     if (aqi && humidity && temperature) {
       switch (dateSecond.getHours()) {
+        case 3:
+          setAm7(timeslotItem);
+          break;
+        case 7:
+          setAm11(timeslotItem);
+          break;
+        case 12:
+          setPm3(timeslotItem);
+          break;
+        case 17:
+          setPm7(timeslotItem);
+          break;
+      }
+    }
+  }, [aqi, humidity, temperature]);
+/*   useEffect(() => {
+    if (aqi && humidity && temperature) {
+      switch (dateSecond.getHours()) {
         case 7:
           setAm7(timeslotItem);
           break;
@@ -57,7 +75,7 @@ const TableCardRow = ({
           break;
       }
     }
-  }, [aqi, humidity, temperature]);
+  }, [aqi, humidity, temperature]); */
 
   const cardDate = new Date(date);
   const timeslotDate = element.date.slice(11);
