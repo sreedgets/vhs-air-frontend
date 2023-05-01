@@ -199,6 +199,7 @@ const Dashboard = () => {
               focusedInput={focusedInput}
               onFocusChange={(focusedInput) => setFocusedInput(focusedInput)}
               isOutsideRange={(day) => !isInclusivelyBeforeDay(day, moment())}
+              showClearDates={true}
             />
           </div>
         </div>
