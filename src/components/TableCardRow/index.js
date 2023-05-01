@@ -78,14 +78,16 @@ const TableCardRow = ({
   }, [aqi, humidity, temperature]); */
 
   const cardDate = new Date(date);
-  const timeslotDate = element.date.slice(11);
 
-  const timeslotArr = [];
-  [...timeslotDate].forEach((element, index) => {
-    if (element !== "0" && element !== ":") {
-      timeslotArr.push(element);
-    }
-  });
+  const parseTime = date => {
+    const splitString = date.split(" ");
+    const getHour = splitString[1].split(":", 1);
+    const readTime = getHour + " " + splitString[2];
+
+    return readTime;
+  } 
+
+  const timeslotDate = parseTime(element.date);
 
   return (
     <tbody className={index === 0 ? "tableRow__thead" : "tableRow__tbody"}>
@@ -106,7 +108,7 @@ const TableCardRow = ({
           )}
         </th>
         <th className="tableRow__column tableRow__text">
-          {timeslotArr.join("")}
+          {timeslotDate}
         </th>
         <th className="tableRow__column">
           <input
