@@ -175,7 +175,7 @@ const Dashboard = () => {
         action={logout}
         actionBtnFirstTitle={"Cancel"}
         actionBtnSecondTitle={"Log Out"}
-        title={"Are you really want log out?"}
+        title={"Are you sure you want to log out?"}
       />
       <div className="dashboard__content">
         <div className="dashboard__header">
