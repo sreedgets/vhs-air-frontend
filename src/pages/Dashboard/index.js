@@ -88,6 +88,9 @@ const Dashboard = () => {
   const getRangeData = async (startDate, endDate) => {
     const startDateConst = new Date(startDate?._d?.setHours(0, 0, 0, 0));
     const endDateConst = new Date(endDate?._d?.setHours(23, 59, 59, 0));
+
+    //console.log(startDateConst, endDateConst);
+
     const response = await axiosRequest(
       `admin/getSensors?page=1&size=50`,
       {
@@ -97,6 +100,7 @@ const Dashboard = () => {
       "POST"
     );
     if (response && response?.successGet) {
+        console.log(response);
       setSensors(response?.sensors);
     }
   };
